@@ -14,3 +14,6 @@ async def initialize(app, services):
     app.router.add_route('GET', '/theme' + '{loc:.*}', api.attack_redirector)
     app.router.add_route('GET', '/techniques' + '{loc:.*}', api.attack_redirector_add_index)
     app.router.add_route('GET', '/tactics' + '{loc:.*}', api.attack_redirector_add_index)
+    app.router.add_route('GET', '/groups' + '{loc:.*}', api.attack_redirector_add_index)
+    app.router.add_route('GET', '/software' + '{loc:.*}', api.attack_redirector_add_index)
+    app.router.add_route('GET', '/resources' + '{loc:.*}', api.attack_redirector_add_index)
