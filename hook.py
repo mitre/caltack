@@ -4,7 +4,6 @@ from plugins.caltack.app.attack_api import AttackAPI
 name = 'ATT&CK'
 description = 'Plugin that serves the ATT&CK website alongside CALDERA.'
 address = '/plugin/caltack/gui'
-enabled = False
 
 
 async def enable(app, services):
