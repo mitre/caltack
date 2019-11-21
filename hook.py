@@ -7,7 +7,7 @@ address = '/plugin/caltack/gui'
 enabled = False
 
 
-async def initialize(app, services):
+async def enable(app, services):
     plugin_dir = 'plugins/caltack'
     api = AttackAPI()
     app.router.add_static('/attack', plugin_dir + '/static/attack-website', append_version=True)
