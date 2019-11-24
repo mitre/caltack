@@ -6,7 +6,8 @@ description = 'Plugin that serves the ATT&CK website alongside CALDERA.'
 address = '/plugin/caltack/gui'
 
 
-async def enable(app, services):
+async def enable(services):
+    app = services.get('app_svc').application
     plugin_dir = 'plugins/caltack'
     api = AttackAPI()
     app.router.add_static('/attack', plugin_dir + '/static/attack-website', append_version=True)
