@@ -4,7 +4,8 @@ from aiohttp import web
 class AttackAPI:
     @staticmethod
     async def landing(request):
-        return web.HTTPFound('/attack/index.html')
+        return web.FileResponse('plugins/caltack/static/caltack_opener.html')
+        # return web.HTTPFound('/attack/index.html')
 
     @staticmethod
     async def attack_redirector(request):
