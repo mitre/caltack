@@ -5,7 +5,6 @@ class AttackAPI:
     @staticmethod
     async def landing(request):
         return web.FileResponse('plugins/caltack/static/caltack_opener.html')
-        # return web.HTTPFound('/attack/index.html')
 
     @staticmethod
     async def attack_redirector(request):
